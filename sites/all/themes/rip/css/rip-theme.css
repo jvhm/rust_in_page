@@ -1,0 +1,95 @@
+/**
+ * @file
+ * SMACSS Theme Rules
+ *
+ * Rust In Page Theme CSS rules
+ *
+ */
+
+@font-face {
+font-family: Hagin Caps;
+src: url('../fonts/Hagin Caps Medium.otf');
+}
+
+@font-face {
+font-family: Archive;
+src: url('../fonts/Archive.otf');
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300);
+
+body {
+	background-color: #000;
+	/*background-image: url('../images/background-main.jpg');*/
+	color: #FFF;
+}
+
+body a {
+	color: #FFF
+}
+
+div#page {
+	border: 1px solid #333;
+	width: 100%;
+}
+
+#header {
+	padding: 0;
+	height: 190px;
+	background-color: #000;
+	/*background-image: url('../images/topo.jpg');*/
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+#header a {
+	color: #FFF;
+}
+
+#navigation {
+	background-color: #161616;
+	position: relative;
+	z-index: 11;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.075), 0 10px 0 rgba(0,0,0,0.01);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.075), 0 10px 0 rgba(0,0,0,0.01);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.075), 0 10px 0 rgba(0,0,0,0.01);
+}
+
+#navigation a,
+#navigation a:visited,
+#navigation a:active,
+#navigation .menu > li {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+#navigation a.active {
+	color: #E74C3C;
+	font-weight: 700;
+}
+
+#navigation a:hover,
+#navigation .menu > li:hover {
+	color: #E74C3C;
+}
+
+#navigation #block-system-main-menu {
+	padding: 13px;
+}
+
+#navigation li.menu__item.is-expanded ul > li {
+	clear: both;
+}
+
+div#main {
+	background-color: #000;
+}

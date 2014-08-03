@@ -1,0 +1,24 @@
+<?php
+
+/*
+Implements hook_menu
+*/
+function rip_custom_pages_menu() {
+	$items['inicio'] = array(
+		'title' => 'Megadeth Brasil - Rust In Page',
+		'description' => t('O maior e mais antigo fã-site Brasileiro sobre o Megadeth'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	return $items;
+}
+
+function rip_home() {
+	return "";
+}
+
+
+?>

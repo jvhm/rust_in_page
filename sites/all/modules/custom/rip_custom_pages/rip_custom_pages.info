@@ -1,0 +1,6 @@
+name = "RIP Custom Pages"
+description = "Módulo para criação de páginas customizadas"
+package = "RIP" 
+core = 7.x
+version = "7.x-1.0"
+files[] = "rip_custom_pages.module"
