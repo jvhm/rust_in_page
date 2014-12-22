@@ -48,7 +48,6 @@ div#page {
 
 #navigation {
 	background-color: #161616;
-	position: relative;
 	z-index: 11;
 	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.075), 0 10px 0 rgba(0,0,0,0.01);
 	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.075), 0 10px 0 rgba(0,0,0,0.01);
@@ -100,6 +99,10 @@ div#page {
 div#main {
 	/*background-color: #000;*/
 	background-image: url('../images/background-main.png');
+}
+
+#page-title {
+	display: none;
 }
 
 #footer {
