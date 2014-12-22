@@ -228,15 +228,15 @@
   /* Span 4 columns, starting in 1st column from left. */
   .sidebar-second #content {
     float: left;
-    width: 80%;
+    width: 70%;
     margin-left: 0%;
-    margin-right: -80%;
+    margin-right: -70%;
   }
 
   /* Span 1 column, starting in 5th column from left. */
   .sidebar-second .region-sidebar-second {
     float: left;
-    width: 20%;
+    width: 30%;
     margin-left: 80%;
     margin-right: -100%;
   }

@@ -12,7 +12,6 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
 
-
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
@@ -24,9 +23,9 @@ Drupal.behaviors.my_custom_behavior = {
 
 Drupal.behaviors.menu_behavior = {
   attach: function(context, settings) {
-  	jQuery("#navigation li.expanded").each(function() {
-  		jQuery(this).hover(function(){
-  			jQuery("ul", this).show();
+  	$("#navigation li.expanded").each(function() {
+  		$(this).hover(function(){
+  			$("ul", this).toggle();
   		});
   	});
   }
