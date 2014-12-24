@@ -5,7 +5,7 @@ Implements hook_menu
 */
 function rip_custom_pages_menu() {
 	$items['inicio'] = array(
-		'title' => 'Megadeth Brasil - Rust In Page',
+		'title' => 'Início',
 		'description' => t('O maior e mais antigo fã-site Brasileiro sobre o Megadeth!'),
 		'page callback' => 'rip_home',
 		'access callback' => 'user_access',
@@ -14,8 +14,80 @@ function rip_custom_pages_menu() {
 	);
 
 	$items['noticias'] = array(
-		'title' => '',
+		'title' => 'Notícias',
 		'description' => t('Notícias e todas as novidades relacionadas ao Megadeth!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['megadeth/agenda'] = array(
+		'title' => 'Agenda',
+		'description' => t('Confira toda a agenda da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['megadeth/biografia'] = array(
+		'title' => 'Biografia',
+		'description' => t('Confira a biografia da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	/*$items['megadeth/formacoes'] = array(
+		'title' => 'Formações',
+		'description' => t('Confira informações sobre todas as formações da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);*/
+
+	$items['megadeth/integrantes'] = array(
+		'title' => 'Integrantes',
+		'description' => t('Confira informações sobre todos os integrantes da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['curiosidades'] = array(
+		'title' => 'Curiosidades',
+		'description' => t('Confira curiosidades sobre a banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['discografia'] = array(
+		'title' => 'Discografia',
+		'description' => t('Confira informações sobre a discografia da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['materias'] = array(
+		'title' => 'Matérias',
+		'description' => t('Confira matérias, reviews e opiniões sobre os mais variados assuntos relacionados ao Megadeth!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['rust-in-page'] = array(
+		'title' => 'Matérias',
+		'description' => t('Saiba mais sobre a equipe que trabalha dentro da Rust In Page!'),
 		'page callback' => 'rip_home',
 		'access callback' => 'user_access',
 		'access arguments' => array('access content'),
