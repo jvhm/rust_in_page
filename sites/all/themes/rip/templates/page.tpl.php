@@ -79,7 +79,7 @@
                 <?php if ($facebook): ?><li class="fb"><?php print l(t(''), $facebook, $Foptions); ?></li> <?php endif; ?>
                 <?php if ($twitter): ?><li class="tw"><?php print l(t(''), $twitter, $Toptions); ?></li> <?php endif; ?>
                 <?php if ($googleplus): ?><li class="gplus"><?php print l(t(''), $googleplus, $Goptions); ?></li> <?php endif; ?>
-                <?php if ($linkedin): ?><li class="ln"><?php print l(t(''), $linkedin, $Loptions); ?></li> <?php endif; ?>
+                <!--<?php if ($linkedin): ?><li class="ln"><?php print l(t(''), $linkedin, $Loptions); ?></li> <?php endif; ?>-->
                 <?php if ($pinterest): ?><li class="pn"><?php print l(t(''), $pinterest, $Poptions); ?></li> <?php endif; ?>
                 <?php if ($vimeo): ?><li class="vm"><?php print l(t(''), $vimeo, $Voptions); ?></li> <?php endif; ?>
                 <?php if ($youtube): ?><li class="yu"><?php print l(t(''), $youtube, $Yoptions); ?></li> <?php endif; ?>
@@ -167,7 +167,7 @@
         <?php print $messages; ?>
         <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
         <?php print render($title_prefix); ?>
-        <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
+        <?php if ($title): ?><h1 class="page-title"><?php //print $title; ?></h1><?php endif; ?>
         <?php print render($title_suffix); ?>
         <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper"><?php print render($tabs); ?></div><?php endif; ?>
         <?php print render($page['help']); ?>

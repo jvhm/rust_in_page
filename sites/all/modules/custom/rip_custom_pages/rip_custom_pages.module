@@ -67,8 +67,80 @@ function rip_custom_pages_menu() {
 		'type' => MENU_CALLBACK
 	);
 
-	$items['discografia'] = array(
-		'title' => 'Discografia',
+	$items['discografia/albuns-de-estudio'] = array(
+		'title' => 'Álbuns de Estúdio',
+		'description' => t('Confira informações sobre a discografia da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['discografia/albuns-ao-vivo'] = array(
+		'title' => 'Álbuns ao Vivo',
+		'description' => t('Confira informações sobre a discografia da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['discografia/videografia'] = array(
+		'title' => 'Videografia',
+		'description' => t('Confira informações sobre a discografia da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['discografia/coletaneas'] = array(
+		'title' => 'Coletâneas',
+		'description' => t('Confira informações sobre a discografia da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['discografia/singles'] = array(
+		'title' => 'Singles',
+		'description' => t('Confira informações sobre a discografia da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['discografia/eps'] = array(
+		'title' => 'EPs',
+		'description' => t('Confira informações sobre a discografia da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['discografia/bootlegs'] = array(
+		'title' => 'Bootlegs',
+		'description' => t('Confira informações sobre a discografia da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['discografia/trilhas-sonoras'] = array(
+		'title' => 'Trilhas Sonoras',
+		'description' => t('Confira informações sobre a discografia da banda!'),
+		'page callback' => 'rip_home',
+		'access callback' => 'user_access',
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	$items['discografia/outros'] = array(
+		'title' => 'Outros',
 		'description' => t('Confira informações sobre a discografia da banda!'),
 		'page callback' => 'rip_home',
 		'access callback' => 'user_access',

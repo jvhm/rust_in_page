@@ -19,7 +19,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'checkbox',
     '#title' => t('Show breadcrumbs in a page'),
     '#default_value' => theme_get_setting('breadcrumbs', 'rip'),
-    '#description'   => t("Check this option to show breadcrumbs in page. Uncheck to hide."),
+    '#description'   => t("Marque esta opção se deseja exibir breadcrumbs nas páginas."),
   );
   $form['rip_settings']['slideshow'] = array(
     '#type' => 'fieldset',
@@ -31,7 +31,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'checkbox',
     '#title' => t('Show Slideshow'),
     '#default_value' => theme_get_setting('slideshow_display', 'rip'),
-    '#description'   => t("Check this option to show Slideshow. Uncheck to hide."),
+    '#description'   => t("Marque esta opção para exibir o Slideshow."),
   );
     $form['rip_settings']['slideshow']['slide1'] = array(
     '#type' => 'fieldset',
@@ -41,7 +41,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
   );
    $form['rip_settings']['slideshow']['slide1']['slide1_img'] = array(
     '#type'     => 'managed_file',
-    '#title'    => t('Slide image'),
+    '#title'    => t('Imagem'),
     '#required' => FALSE,
     '#upload_location' => file_default_scheme() . '://theme/slideshow-images/',
     '#default_value' => theme_get_setting('slide1_img'), 
@@ -51,9 +51,14 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
   );
     $form['rip_settings']['slideshow']['slide1']['slide1_des'] = array(
     '#type' => 'textfield',
-    '#title' => t('Slide 1'),
+    '#title' => t('Texto'),
     '#default_value' => theme_get_setting('slide1_des', 'rip'),
-    '#description'   => t("Enter Description for Slide1."),
+    '#description'   => t("Digite o texto de exibição do slide."),
+  );
+    $form['rip_settings']['slideshow']['slide1']['slide1_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('URL'),
+    '#description'   => t("Digite a URL para o conteúdo do slide."),
   );
     $form['rip_settings']['slideshow']['slide2'] = array(
     '#type' => 'fieldset',
@@ -63,7 +68,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
   );
    $form['rip_settings']['slideshow']['slide2']['slide2_img'] = array(
     '#type'     => 'managed_file',
-    '#title'    => t('Slide image'),
+    '#title'    => t('Imagem'),
     '#required' => FALSE,
     '#upload_location' => file_default_scheme() . '://theme/slideshow-images/',
     '#default_value' => theme_get_setting('slide2_img'), 
@@ -73,9 +78,14 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
   );    
     $form['rip_settings']['slideshow']['slide2']['slide2_des'] = array(
     '#type' => 'textfield',
-    '#title' => t('Slide 2'),
+    '#title' => t('Texto'),
     '#default_value' => theme_get_setting('slide2_des', 'rip'),
-    '#description'   => t("Enter Description for Slide2."),
+    '#description'   => t("Digite o texto de exibição do slide."),
+  );
+    $form['rip_settings']['slideshow']['slide1']['slide1_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('URL'),
+    '#description'   => t("Digite a URL para o conteúdo do slide."),
   );
     $form['rip_settings']['slideshow']['slide3'] = array(
     '#type' => 'fieldset',
@@ -85,7 +95,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
   );
    $form['rip_settings']['slideshow']['slide3']['slide3_img'] = array(
     '#type'     => 'managed_file',
-    '#title'    => t('Slide image'),
+    '#title'    => t('Imagem'),
     '#required' => FALSE,
     '#upload_location' => file_default_scheme() . '://theme/slideshow-images/',
     '#default_value' => theme_get_setting('slide3_img'), 
@@ -95,9 +105,14 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
   );     
     $form['rip_settings']['slideshow']['slide3']['slide3_des'] = array(
     '#type' => 'textfield',
-    '#title' => t('Slide 3'),
+    '#title' => t('Texto'),
     '#default_value' => theme_get_setting('slide3_des', 'rip'),
-    '#description'   => t("Enter Description for Slide3."),
+    '#description'   => t("Digite o texto de exibição do slide."),
+  );
+    $form['rip_settings']['slideshow']['slide1']['slide1_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('URL'),
+    '#description'   => t("Digite a URL para o conteúdo do slide."),
   );
   $form['rip_settings']['social'] = array(
     '#type' => 'fieldset',
@@ -109,7 +124,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'checkbox',
     '#title' => t('Show Social Icon'),
     '#default_value' => theme_get_setting('display', 'rip'),
-    '#description'   => t("Check this option to show Social Icon. Uncheck to hide."),
+    '#description'   => t("Marque esta opção para exibir o Social Icon."),
   );
     $form['rip_settings']['social']['facebook1'] = array(
     '#type' => 'fieldset',
@@ -121,7 +136,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Facebook URL'),
     '#default_value' => theme_get_setting('facebook', 'rip'),
-    '#description'   => t("Enter your Facebook Profile URL. example:: http://www.xyz.com"),
+    '#description'   => t("Digite a URL da página do perfil no Facebook."),
   );
     $form['rip_settings']['social']['twitter1'] = array(
     '#type' => 'fieldset',
@@ -133,7 +148,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Twitter URL'),
     '#default_value' => theme_get_setting('twitter', 'rip'),
-    '#description' => t("Enter your Twitter Profile URL. example:: http://www.xyz.com"),
+    '#description' => t("Digite a URL da página do perfil no Twitter."),
   );
     $form['rip_settings']['social']['googleplus1'] = array(
     '#type' => 'fieldset',
@@ -145,7 +160,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('GooglePlus URL'),
     '#default_value' => theme_get_setting('googleplus', 'rip'),
-    '#description'   => t("Enter your Google Plus Profile URL. example:: http://www.xyz.com"),
+    '#description'   => t("Digite a URL da página do perfil no Google Plus."),
   );
     $form['rip_settings']['social']['linkedin1'] = array(
     '#type' => 'fieldset',
@@ -157,7 +172,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('LinkedIn URL'),
     '#default_value' => theme_get_setting('linkedin', 'rip'),
-    '#description'   => t("Enter your LinkedIn Profile URL. example:: http://www.xyz.com"),
+    '#description'   => t("Digite a URL da página do perfil no LinkedIn."),
   );
     $form['rip_settings']['social']['pinterest1'] = array(
     '#type' => 'fieldset',
@@ -169,7 +184,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Pinterest URL'),
     '#default_value' => theme_get_setting('pinterest', 'rip'),
-    '#description'   => t("Enter your Pinterest Profile URL. example:: http://www.xyz.com"),
+    '#description'   => t("Digite a URL da página do perfil no Pinterest."),
   );
     $form['rip_settings']['social']['vimeo1'] = array(
     '#type' => 'fieldset',
@@ -181,7 +196,7 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Vimeo URL'),
     '#default_value' => theme_get_setting('vimeo', 'rip'),
-    '#description'   => t("Enter your Vimeo Profile URL. example:: http://www.xyz.com"),
+    '#description'   => t("Digite a URL da página do perfil no Vimeo."),
   );
     $form['rip_settings']['social']['youtube1'] = array(
     '#type' => 'fieldset',
@@ -193,36 +208,6 @@ function rip_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Youtube URL'),
     '#default_value' => theme_get_setting('youtube', 'rip'),
-    '#description'   => t("Enter your Youtube Profile URL. example:: http://www.xyz.com"),
-  );
-  $form['rip_settings']['footer'] = array(
-    '#type' => 'fieldset',
-    '#title' => t('Footer'),
-    '#collapsible' => TRUE,
-    '#collapsed' => FALSE,
-  );
-  $form['rip_settings']['footer']['footer_copyright'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Show copyright text in footer'),
-    '#default_value' => theme_get_setting('footer_copyright', 'rip'),
-    '#description'   => t("Check this option to show copyright text in footer. Uncheck to hide."),
-  );
-  $form['rip_settings']['footer']['footer_developed'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Show theme developed by in footer'),
-    '#default_value' => theme_get_setting('footer_developed', 'rip'),
-    '#description'   => t("Check this option to show design & developed by text in footer. Uncheck to hide."),
-  );
-  $form['rip_settings']['footer']['footer_developedby'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Add name developed by in footer'),
-    '#default_value' => theme_get_setting('footer_developedby', 'rip'),
-    '#description'   => t("Add name developed by in footer"),
-  );
-  $form['rip_settings']['footer']['footer_developedby_url'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Add link to developed by in footer'),
-    '#default_value' => theme_get_setting('footer_developedby_url', 'rip'),
-    '#description'   => t("Add url developed by in footer. example:: http://www.xyz.com"),
+    '#description'   => t("Digite a URL da página do perfil no YouTube."),
   );
 }

@@ -8,9 +8,10 @@ Drupal.behaviors.slider = {
 attach: function (context, settings) {
   $(window).load(function() {
     $("#single-post-slider").flexslider({
-      animation: 'slide',
+      animation: 'fade',
       slideshow: true,
       controlNav: true,
+      directionNav: true,
       smoothHeight: true,
       start: function(slider) {
         slider.container.click(function(e) {

@@ -45,9 +45,9 @@ features[] = secondary_menu
 settings[breadcrumbs]             = 1
 settings[display]                 = 1
 settings[slideshow_display]       = 1
-settings[slide1_des]             = "Solution that you need"
-settings[slide2_des]             = "Be successful it's easy"
-settings[slide3_des]             = "We work for your profit"
+settings[slide1_des]             = "Lorem ipsum dolor sit amet."
+settings[slide2_des]             = "Lorem ipsum dolor sit amet."
+settings[slide3_des]             = "Lorem ipsum dolor sit amet."
 settings[facebook]                = "http://www.facebook.com"
 settings[twitter]                 = "https://twitter.com"
 settings[googleplus]              = "http://plus.google.com"
@@ -55,10 +55,10 @@ settings[linkedin]                = "http://in.linkedin.com"
 settings[pinterest]               = "https://www.pinterest.com"
 settings[vimeo]                   = "https://vimeo.com"
 settings[youtube]                 = "http://www.youtube.com"
-settings[footer_copyright]        = 1
-settings[footer_developed]        = 1
-settings[footer_developedby]      = Ankit Hinglajia
-settings[footer_developedby_url]  = http://www.about.me/ankithinglajia
+settings[footer_copyright]        = 0
+settings[footer_developed]        = 0
+settings[footer_developedby]      = 0
+settings[footer_developedby_url]  = 0
 
 ; Information added by Drupal.org packaging script on 2014-12-24
 version = "7.x-1.1"
