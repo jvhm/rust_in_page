@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the integrantes feature.
+ */
+
+include_once 'integrantes.features.inc';

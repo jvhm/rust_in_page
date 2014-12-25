@@ -7,12 +7,21 @@ engine = phptemplate
 ;----------------------------------------------------
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/media.css
+stylesheets[all][] = css/jquery.fancybox.css
+stylesheets[all][] = css/jquery.fancybox-buttons.css
+stylesheets[all][] = css/jquery.fancybox-thumbs.css
 
 ; SCRIPTS
 ;----------------------------------------------------
 scripts[] = js/menu.js
 scripts[] = js/flexslider-min.js
 scripts[] = js/slide.js
+scripts[] = js/jquery.fancybox.js
+scripts[] = js/jquery.fancybox.pack.js
+scripts[] = js/jquery.fancybox-buttons.js
+scripts[] = js/jquery.fancybox-media.js
+scripts[] = js/jquery.fancybox-thumbs.js
+scripts[] = js/principal.js
 
 ; REGIONS
 ;----------------------------------------------------

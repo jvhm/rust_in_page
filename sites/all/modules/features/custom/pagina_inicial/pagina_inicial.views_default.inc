@@ -176,7 +176,8 @@ function pagina_inicial_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<p><a href="[path]">Ler mais.</a></p>';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<ul class="links inline"><li class="node-readmore first last"><a href="[path]">Leia mais</a></li>
+</ul>';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
   /* Campo: Conteúdo: ShareThis Link */
   $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
