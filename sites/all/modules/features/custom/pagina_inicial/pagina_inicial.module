@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Página Inicial feature.
+ */
+
+include_once 'pagina_inicial.features.inc';

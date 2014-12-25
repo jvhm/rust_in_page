@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Biografia feature.
+ */
+
+include_once 'biografia.features.inc';
